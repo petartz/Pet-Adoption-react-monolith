@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace pet-adoption-with-objection-client build",
+    "dev": "yarn workspace pet-adoption-with-objection-server dev",
+    "dev:debug": "yarn workspace pet-adoption-with-objection-server dev:debug",
+    "heroku-postbuild": "yarn workspace pet-adoption-with-objection-client build",
+    "start": "yarn workspace pet-adoption-with-objection-server start",
+    "dev:cypress": "yarn workspace pet-adoption-with-objection-server dev:e2e",
+    "e2e:open": "yarn workspace pet-adoption-with-objection-e2e e2e:open",
+    "e2e:run": "yarn workspace pet-adoption-with-objection-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.15"
+  }
+}
